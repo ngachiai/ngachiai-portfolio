@@ -1,0 +1,22 @@
+const modal=document.querySelector('#video-modal');
+const player=modal.querySelector('video');
+const openVideo=(card)=>{player.src=card.dataset.video;modal.showModal();player.play().catch(()=>{});};
+document.querySelectorAll('.project').forEach(card=>{card.addEventListener('click',()=>openVideo(card));card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openVideo(card)}})});
+const close=()=>{player.pause();player.removeAttribute('src');player.load();modal.close()};
+modal.querySelector('.close').addEventListener('click',close);
+modal.addEventListener('click',e=>{if(e.target===modal)close()});
+modal.addEventListener('cancel',e=>{e.preventDefault();close()});
+
+const imageModal=document.querySelector('#image-modal');
+const imageViewer=imageModal.querySelector('img');
+const slides=[...document.querySelectorAll('.slide-card')];
+let currentSlide=0;
+const showSlide=index=>{currentSlide=(index+slides.length)%slides.length;imageViewer.src=slides[currentSlide].dataset.image;imageViewer.alt=slides[currentSlide].querySelector('img').alt;};
+slides.forEach((slide,index)=>slide.addEventListener('click',()=>{showSlide(index);imageModal.showModal()}));
+imageModal.querySelector('.image-prev').addEventListener('click',()=>showSlide(currentSlide-1));
+imageModal.querySelector('.image-next').addEventListener('click',()=>showSlide(currentSlide+1));
+const closeImage=()=>{imageModal.close();imageViewer.removeAttribute('src')};
+imageModal.querySelector('.image-close').addEventListener('click',closeImage);
+imageModal.addEventListener('click',e=>{if(e.target===imageModal)closeImage()});
+imageModal.addEventListener('cancel',e=>{e.preventDefault();closeImage()});
+document.addEventListener('keydown',e=>{if(imageModal.open&&e.key==='ArrowLeft')showSlide(currentSlide-1);if(imageModal.open&&e.key==='ArrowRight')showSlide(currentSlide+1)});
