@@ -16,7 +16,7 @@ function enquiryUrl(film){return 'mailto:ngachiai3@gmail.com?subject='+encodeURI
 document.querySelectorAll('[data-enquiry]').forEach(a=>{a.href=enquiryUrl(films.find(f=>f.id===a.dataset.enquiry));});
 function syncBackgroundButton(){const playing=!montage.paused;$('montage-toggle').textContent=playing?'Pause background':'Play background';$('montage-toggle').setAttribute('aria-pressed',String(playing));}
 function pauseBackground(){montage.pause();syncBackgroundButton();}
-async function playBackground(){if(reduced || !backgroundWanted || !heroVisible || (dialog.open || $('art-viewer').open) || document.hidden)return;if(!montage.getAttribute('src'))montage.src='https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/opening-montage.mp4';try{await montage.play();}catch{syncBackgroundButton();}}
+async function playBackground(){if(reduced || !backgroundWanted || !heroVisible || (dialog.open || $('art-viewer').open) || document.hidden)return;if(!montage.getAttribute('src'))montage.src='https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/opening-montage-v2.mp4';try{await montage.play();}catch{syncBackgroundButton();}}
 montage.addEventListener('playing',()=>{montage.classList.add('is-playing');syncBackgroundButton();});
 montage.addEventListener('pause',syncBackgroundButton);
 montage.addEventListener('error',()=>{montage.classList.remove('is-playing');backgroundWanted=false;syncBackgroundButton();});
