@@ -25,7 +25,7 @@
     visible.forEach(f => $('film-grid').appendChild(cards.get(f.id)));
     document.querySelectorAll('[data-scope]').forEach(button => {const active=button.dataset.scope===state.scope;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
     document.querySelectorAll('[data-filter]').forEach(button=>{const active=button.dataset.filter===state.category;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
-    $('film-count').textContent = state.scope==='selected' && state.category==='All' && !state.query ? '6 selected films · 22 in the collection' : results.length+' '+(results.length===1?'film':'films')+' found';
+    $('film-count').textContent = state.scope==='selected' && state.category==='All' && !state.query ? '6 selected films · 23 in the collection' : results.length+' '+(results.length===1?'film':'films')+' found';
     $('empty-state').hidden = results.length !== 0;
     $('clear-search').hidden = !state.query;
     const remaining = results.length-visible.length;
