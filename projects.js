@@ -336,6 +336,22 @@ window.NGACHI_PROJECTS = [
     "searchTerms": ""
   },
   {
+    "id": "ai-explained-simply",
+    "title": "AI, Explained Simply",
+    "category": "AI EXPLAINER · EDUCATIONAL CONTENT",
+    "description": "A self-initiated educational explainer introducing AI through everyday examples, pattern learning and image classification, with a reminder to check AI outputs. Ngachi.ai handled the concept, script, Google Flow visuals and CapCut editing.",
+    "format": "28 seconds · Landscape · 854 × 480",
+    "video": "https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/ai-explained-simply.mp4",
+    "poster": "https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/ai-explained-simply.png",
+    "alt": "AI, Made Simple thumbnail with a Black female presenter, laptop, music-note and envelope icons",
+    "group": "Technology",
+    "duration": 28,
+    "selected": false,
+    "preview": "https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/ai-explained-simply-preview.mp4",
+    "focus": "Plain-language script · Supporting visuals · Educational storytelling",
+    "searchTerms": "AI artificial intelligence explainer educational presenter Google Flow CapCut"
+  },
+  {
     "id": "creative-intelligence-os",
     "title": "The Creative Intelligence OS",
     "category": "AI COMMERCIAL · CREATIVE DIRECTION",
