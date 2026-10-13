@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   const films = window.NGACHI_PROJECTS;
-  const reel = {id:'opening-reel',title:'The Ngachi.ai Opening Reel',category:'SELECTED WORK · NGACHI.AI',description:'A 21-second journey through jewelry, food, luxury transport and the cat-led Smarter Mealtimes film. Explore the individual projects in the collection.',focus:'A curated introduction to the collection',format:'21 seconds · Landscape · 1280 × 720 · Silent reel',video:'https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/opening-montage-v2.mp4',poster:'https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/heart-of-gold.jpg'};
+  const reel = {id:'opening-reel',title:'The Ngachi.ai Opening Reel',category:'SELECTED WORK · NGACHI.AI',description:'A 21-second journey through jewelry, food, luxury transport and the cat-led Smarter Mealtimes film. Explore the individual projects in the collection.',focus:'A curated introduction to the collection',format:'21 seconds · Landscape · 1280 × 720 · Silent reel',video:'assets/opening-montage-v2.mp4',poster:'assets/heart-of-gold.jpg'};
   const byId = new Map([...films,reel].map(f => [f.id,f]));
   const $ = id => document.getElementById(id);
   const normalize = text => text.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
@@ -25,7 +25,7 @@
     visible.forEach(f => $('film-grid').appendChild(cards.get(f.id)));
     document.querySelectorAll('[data-scope]').forEach(button => {const active=button.dataset.scope===state.scope;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
     document.querySelectorAll('[data-filter]').forEach(button=>{const active=button.dataset.filter===state.category;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
-    $('film-count').textContent = state.scope==='selected' && state.category==='All' && !state.query ? '6 selected films · 23 in the collection' : results.length+' '+(results.length===1?'film':'films')+' found';
+    $('film-count').textContent = state.scope==='selected' && state.category==='All' && !state.query ? '7 selected films · 23 in the collection' : results.length+' '+(results.length===1?'film':'films')+' found';
     $('empty-state').hidden = results.length !== 0;
     $('clear-search').hidden = !state.query;
     const remaining = results.length-visible.length;
