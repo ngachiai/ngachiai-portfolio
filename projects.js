@@ -16,6 +16,22 @@ window.NGACHI_PROJECTS = [
     "searchTerms": ""
   },
   {
+    "id": "skincare-three-hooks",
+    "title": "1 Product. 3 Hooks. — Skincare AI UGC",
+    "category": "AI UGC · SKINCARE",
+    "description": "One skincare concept, three ways to start the conversation. An AI-generated presenter, warm home setting and product close-ups explore routine overwhelm, simplicity and considered product choices. Ngachi.ai can adapt this approach into branded scripts, presenter videos and hook variations for creative testing. Independent concept sample.",
+    "format": "78 seconds · Vertical · 1080 × 1920 · Three hook variations",
+    "video": "https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/skincare-three-hooks.mp4",
+    "poster": "https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/skincare-three-hooks.jpg",
+    "alt": "AI skincare presenter holding an amber dropper bottle beside the headline 1 Product. 3 Hooks.",
+    "group": "UGC",
+    "duration": 78,
+    "selected": true,
+    "preview": "https://ngachiai-portfolio.adangamnwachukwu.chatgpt.site/assets/skincare-three-hooks-preview.mp4",
+    "focus": "Hook variations · Presenter consistency · Product storytelling",
+    "searchTerms": "beauty skincare serum AI UGC presenter spokesperson hooks A B C"
+  },
+  {
     "id": "yummy-yoghie",
     "title": "Yummy Yoghie",
     "category": "AI COMMERCIAL · FOOD & BEVERAGE",
