@@ -374,7 +374,7 @@ window.NGACHI_PROJECTS = [
     "description": "A polished vertical beauty commercial following a luxury salon experience from professional treatment to a smooth, glossy final reveal. Created to show salons, hairstylists and haircare brands how cinematic AI storytelling can turn a service into a booking-focused campaign.",
     "format": "10 seconds · Vertical · 1080 × 1920",
     "video": "assets/luxury-hair-transformation.mp4",
-    "poster": "assets/luxury-hair-transformation.png",
+    "poster": "assets/luxury-hair-transformation.jpg",
     "alt": "Luxury Hair Transformation thumbnail featuring a white woman with long glossy brunette hair in an elegant salon",
     "group": "Beauty",
     "duration": 10,
